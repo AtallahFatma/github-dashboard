@@ -1,0 +1,183 @@
+.l-block {
+    display: block;
+}
+
+.l-inline-block {
+    display: inline-block;
+}
+
+.l-display-contents {
+    display: contents;
+}
+
+.l-absolute {
+    position: absolute;
+}
+
+.l-fixed {
+    position: fixed;
+}
+
+.l-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.l-relative {
+    position: relative;
+}
+
+.l-float-right {
+    float: right;
+}
+
+.l-fill {
+    width: 100%;
+    height: 100%;
+}
+
+.l-fill-width {
+    width: 100%;
+}
+
+.l-fill-height {
+    height: 100%;
+}
+
+.l-half-width {
+    width: 50%;
+}
+
+.l-padding-around--large {
+    padding: 30px;
+}
+
+.l-padding-around--medium {
+    padding: 15px;
+}
+
+.l-padding-around {
+    padding: 10px;
+}
+
+.l-padding-around--small {
+    padding: 5px;
+}
+
+.l-padding-bornes {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.l-padding-bornes--medium {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.l-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.l-overflow-hidden {
+    overflow: hidden;
+}
+
+.l-overflow-visible {
+    overflow: visible;
+}
+
+.l-overflow-auto {
+    overflow: auto;
+}
+
+.l-no-margin {
+    margin: 0;
+}
+
+.l-no-padding-bottom {
+    padding-bottom: 0;
+}
+
+.l-padding--large {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.l-padding--medium {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.l-padding--small {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.l-padding--xsmall {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.l-padding--xxsmall {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.l-vmargin--xxlarge {
+    margin-bottom: 40px;
+}
+
+.l-vmargin--xlarge {
+    margin-bottom: 30px;
+}
+
+.l-vmargin--large {
+    margin-bottom: 20px;
+}
+
+.l-vmargin--medium {
+    margin-bottom: 15px;
+}
+
+.l-vmargin--small {
+    margin-bottom: 10px;
+}
+
+.l-vmargin--xsmall {
+    margin-bottom: 5px;
+}
+
+.l-hmargin--xlarge {
+    margin-right: 40px;
+}
+
+.l-hmargin--large {
+    margin-right: 20px;
+}
+
+.l-hmargin--small {
+    margin-right: 10px;
+}
+
+.l-hmargin--xsmall {
+    margin-right: 5px;
+}
+
+.l-hmargin--xlarge,
+.l-hmargin--large,
+.l-hmargin--small,
+.l-hmargin--xsmall {
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.curved {
+    border-radius: 10px;
+}

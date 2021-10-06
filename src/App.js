@@ -1,27 +1,29 @@
 import './App.css';
-import {useSelector, useDispatch} from 'react-redux';
-import {getData} from './actions';
+import SearchUser from './components/searchUser';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import RepoDetails from './components/repoDetails';
 
 function App() {
-  const users = useSelector(({users}) => users)
-  const dispatch = useDispatch();
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <button onClick={() => dispatch(getData())}>Get users</button>
-        {users &&
-          <ul>
-          {console.log(users)}
-          {/* 
-            {users.map(user => (
-              <li>{user}</li>
-              ))
-            } */}
-          </ul>
-        }
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          Github dashboard Sample
+        </header>
+      </div>
+      <Switch>
+        <Route path="/details">
+          <RepoDetails />
+        </Route>
+        <Route path="/">
+          <SearchUser />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
