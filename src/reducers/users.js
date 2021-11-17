@@ -2,7 +2,8 @@ const INITIAL_STATE = {
     error: null,
     loading: false
 };
-const initialState = (state = INITIAL_STATE, action) => {
+
+const reducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case 'SET_USERS':
             return {
@@ -43,4 +44,4 @@ const initialState = (state = INITIAL_STATE, action) => {
             return state;
     }
 }
-export default initialState;
+export default reducer;
